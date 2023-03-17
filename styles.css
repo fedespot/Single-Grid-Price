@@ -139,6 +139,9 @@ main{
 }
 
 @media (max-width:600px){
+    .container{
+        width: 80%;
+    }
     .main-info{
         padding: 0.8em;
     }
