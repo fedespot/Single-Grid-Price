@@ -1,0 +1,152 @@
+/* # Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+### Body Copy
+- Font size: 16px
+
+### Font
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+body{
+    font-family: Karla;
+    font-size: 16px;
+    
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-info{
+    padding: 2.5em;
+}
+
+.main-info h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+    margin-bottom: 0.8em;
+}
+
+.main-info__subtitle{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 0.5em;
+}
+
+.main-info p{
+    line-height: 1.6;
+    color: hsl(218, 22%, 67%);
+}
+
+.bottom{
+    display: flex; 
+}
+
+.card{
+    width: 50%;
+    padding: 2.5em;
+    color: white;
+}
+
+.pricing{
+    background: hsl(179, 62%, 43%);
+}
+
+.row{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.month{
+    color: hsl(204, 43%, 93%);
+    
+}
+
+.cost{
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+}
+
+.sign-up{
+    margin-top: 2em;
+    border-radius: 0.5em;
+    background: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 3.3em;
+}
+
+.why-us{
+    background: rgba(74,190,189,255);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+@media (max-width:800px){
+    .bottom{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    .main-info{
+        padding: 0.8em;
+    }
+    .main-info h1{
+        font-size: 1.2rem;
+    }
+    .main-info__subtitle{
+        font-size: 1rem;
+    }
+
+    .main-info p{
+        font-size: 0.8rem;
+    }
+}
