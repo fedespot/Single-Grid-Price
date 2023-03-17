@@ -127,6 +127,9 @@ main{
 
 
 @media (max-width:800px){
+    .container{
+        width: 60%;
+    }
     .bottom{
         flex-direction: column;
     }
